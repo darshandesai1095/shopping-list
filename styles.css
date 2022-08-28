@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  color: #212529;
+}
+
+body {
+  height: 100vh;
+  background: white;
+  background-image: linear-gradient(
+    to right top,
+    #fcefb4,
+    #fbea9f,
+    #fbe689,
+    #fae173,
+    #f9dc5c
+  );
+  background-repeat: none;
+}
+
+.container {
+  flex-direction: column;
+  min-height: 100px;
+  width: 400px;
+  margin: 70px auto;
+  padding: 30px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/***
+##########################################
+  HEADER SECTION
+##########################################
+***/
+
+header {
+  width: 335px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.title {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+#input {
+  border: 1px solid #adb5bd;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 335px;
+}
+
+#input:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/***
+##########################################
+  LIST SECTION
+##########################################
+***/
+
+ul {
+  margin-bottom: 30px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3px;
+}
+
+li > input {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  background-color: #7cf0bd;
+  margin: auto 1px;
+  cursor: pointer;
+}
+
+li > input:hover {
+  background-color: #2fe696;
+}
+
+li > input:checked {
+  background-color: rgba(124, 240, 189, 0.4);
+}
+
+li > input::after {
+  content: "✓";
+  color: white;
+  position: relative;
+  top: 11px;
+  left: 14px;
+}
+
+li p {
+  width: 250px;
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  background-color: #e9ecef;
+}
+
+.remove-btn {
+  padding: 10px 15px;
+  margin: 1px;
+  border: 1px solid #f9627d;
+  background-color: #f9627d;
+  color: white;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: #f83a5d;
+  border: 1px solid #f83a5d;
+}
+
+.cross-out {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+.summary {
+  position: absolute;
+  bottom: 30px;
+}
